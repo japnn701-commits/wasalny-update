@@ -139,15 +139,16 @@ export default async function NewRequestPage({
                 <CardContent className="space-y-4">
                   <div className="grid gap-2">
                     <Label htmlFor="service_id">نوع الخدمة *</Label>
-                    <Select name="service_id" defaultValue={params.service} required>
+                  <Select name="service_id" defaultValue={String(params.service || "")} required>
                       <SelectTrigger>
                         <SelectValue placeholder="اختر نوع الخدمة" />
                       </SelectTrigger>
                       <SelectContent>
                         {services?.map((service) => (
-                          <SelectItem key={service.id} value={service.id}>
-                            {service.name_ar || service.name_en}
-                          </SelectItem>
+                         <SelectItem key={service.id} value={String(service.id)}>
+                         {service.name_ar || service.name_en}
+                       </SelectItem>
+
                         ))}
                       </SelectContent>
                     </Select>
