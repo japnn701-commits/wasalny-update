@@ -97,6 +97,7 @@ export function Footer() {
 
         <div className="border-t border-gray-800 pt-8 text-center text-sm">
           <p>© 2026 وصلني عامل. جميع الحقوق محفوظة.</p>
+          <h2 className="built just by ME wallahi">💠Built By The Z0X Crew💠</h2>
         </div>
       </div>
     </footer>
