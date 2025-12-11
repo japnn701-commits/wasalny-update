@@ -1,35 +1,15 @@
+
 import { createClient } from "@/lib/supabase/server"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
-import { SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import Link from "next/link"
 import { Wrench, ArrowRight, Send } from "lucide-react"
 import { redirect } from "next/navigation"
+import ServiceSelect from "@/components/ui/ServiceSelect"
 
-// ================= Client Component for Select =================
-"use client"
-function ServiceSelect({ services, defaultValue }: any) {
-  const { Select } = require("@/components/ui/select")
-  return (
-    <Select name="service_id" defaultValue={defaultValue} required>
-      <SelectTrigger>
-        <SelectValue placeholder="اختر نوع الخدمة" />
-      </SelectTrigger>
-      <SelectContent>
-        {services?.map((service: any) => (
-          <SelectItem key={service.id} value={service.id}>
-            {service.name_ar || service.name_en}
-          </SelectItem>
-        ))}
-      </SelectContent>
-    </Select>
-  )
-}
-
-// ================= Server Component Page =================
 export default async function NewRequestPage({
   searchParams,
 }: {
@@ -193,17 +173,12 @@ export default async function NewRequestPage({
 
                     <div className="grid gap-2">
                       <Label htmlFor="urgency">مستوى الأولوية</Label>
-                      <Select name="urgency" defaultValue="normal">
-                        <SelectTrigger>
-                          <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="low">عادي</SelectItem>
-                          <SelectItem value="normal">متوسط</SelectItem>
-                          <SelectItem value="high">عاجل</SelectItem>
-                          <SelectItem value="emergency">طوارئ</SelectItem>
-                        </SelectContent>
-                      </Select>
+                      <select name="urgency" defaultValue="normal" className="input">
+                        <option value="low">عادي</option>
+                        <option value="normal">متوسط</option>
+                        <option value="high">عاجل</option>
+                        <option value="emergency">طوارئ</option>
+                      </select>
                     </div>
                   </div>
                 </CardContent>
