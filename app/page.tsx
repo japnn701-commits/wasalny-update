@@ -186,7 +186,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">ليه وصلني عامل؟</h2>
-            <p className="text-lg text-muted-foreground">حاجات تخلينا الخيار والبطاطس الأفضل </p>
+            <h3 className="text-lg text-muted-foreground">حاجات تخلينا الخيار والبطاطس الأفضل </h3>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -209,7 +209,7 @@ export default function HomePage() {
               {
                 icon: Clock,
                 title: "خدمة طوارئ 24/7",
-                description: "خدمة طوارئ متاحة على مدار الساعة للحالات العاجلة",
+                description: "خدمة طوارئ متاحة على مدار الساعة للحالات المستعجله",
               },
               {
                 icon: MessageSquare,
