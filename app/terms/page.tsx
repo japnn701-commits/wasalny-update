@@ -37,15 +37,16 @@ export default function TermsPage() {
                   <li>عدم نشر محتوى مسيء أو مضلل</li>
                   <li>احترام جميع المستخدمين الآخرين</li>
                   <li>عدم محاولة اختراق أو تعطيل المنصة</li>
+                  <li>يعني اي scan حتي يبقا متزعلش</li>
                 </ul>
               </section>
 
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">4. الدفع والرسوم</h2>
                 <ul className="list-disc list-inside text-muted-foreground space-y-2 mr-4">
-                  <li>جميع الأسعار معروضة بالريال السعودي</li>
+                  <li>جميع الأسعار معروضة بالجنيه المصري</li>
                   <li>نحصل على عمولة من العامل على كل خدمة مكتملة</li>
-                  <li>الدفع يتم من خلال بوابات دفع آمنة</li>
+                  <li>الدفع يتم من خلال بوابات دفع آمنة متقلقش</li>
                   <li>سياسة الاسترجاع تخضع لنظام ضمان الجودة</li>
                 </ul>
               </section>
@@ -89,20 +90,20 @@ export default function TermsPage() {
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">9. القانون الحاكم</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  تخضع هذه الشروط لقوانين المملكة العربية السعودية. أي نزاع ينشأ عن استخدام المنصة سيتم حله وفقاً
-                  للقوانين السعودية.
+                 تخضع هذه الشروط للقوانين الخاصه بنا. أي نزاع ينشأ عن استخدام المنصة سيتم حله وفقاً
+                  للقوانين  خاصتنا.
                 </p>
               </section>
 
               <section>
                 <h2 className="text-2xl font-bold text-foreground mb-4">10. الاتصال بنا</h2>
                 <p className="text-muted-foreground leading-relaxed">
-                  إذا كان لديك أي أسئلة حول هذه الشروط، يرجى الاتصال بنا عبر: support@waslny3amel.com
+                  إذا كان لديك أي أسئلة حول هذه الشروط، يرجى الاتصال بنا عبر: zox3614@gmail.com
                 </p>
               </section>
 
               <div className="pt-6 border-t">
-                <p className="text-sm text-muted-foreground">آخر تحديث: يناير 2025</p>
+                <p className="text-sm text-muted-foreground">آخر تحديث: يناير 2026</p>
               </div>
             </CardContent>
           </Card>
