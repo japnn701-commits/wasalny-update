@@ -24,7 +24,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">البريد الإلكتروني</h3>
-                    <p className="text-muted-foreground">support@waslny3amel.com</p>
+                    <p className="text-muted-foreground">zox3614@gmail.com</p>
                   </div>
                 </CardContent>
               </Card>
@@ -36,7 +36,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">الهاتف</h3>
-                    <p className="text-muted-foreground">+966 50 123 4567</p>
+                    <p className="text-muted-foreground">+2011594090897</p>
                   </div>
                 </CardContent>
               </Card>
@@ -48,7 +48,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="font-bold text-foreground mb-1">العنوان</h3>
-                    <p className="text-muted-foreground">الرياض، المملكة العربية السعودية</p>
+                    <p className="text-muted-foreground">القاهره ,المنيا</p>
                   </div>
                 </CardContent>
               </Card>
