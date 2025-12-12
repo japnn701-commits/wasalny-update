@@ -5,6 +5,7 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import { ServiceSelectWrapper, UrgencySelectWrapper } from "@/components/service-select"
 import Link from "next/link"
 import { Wrench, ArrowRight, Send } from "lucide-react"
 import { redirect } from "next/navigation"
@@ -137,18 +138,7 @@ export default async function NewRequestPage({
                 <CardContent className="space-y-4">
                   <div className="grid gap-2">
                     <Label htmlFor="service_id">نوع الخدمة *</Label>
-                    <Select name="service_id" defaultValue={params.service} required>
-                      <SelectTrigger>
-                        <SelectValue placeholder="اختر نوع الخدمة" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        {services?.map((service) => (
-                          <SelectItem key={service.id} value={service.id}>
-                            {service.name_ar || service.name_en}
-                          </SelectItem>
-                        ))}
-                      </SelectContent>
-                    </Select>
+                    <ServiceSelectWrapper services={services} defaultValue={params.service} />
                   </div>
 
                   <div className="grid gap-2">
@@ -181,17 +171,7 @@ export default async function NewRequestPage({
 
                     <div className="grid gap-2">
                       <Label htmlFor="urgency">مستوى الأولوية</Label>
-                      <Select name="urgency" defaultValue="normal">
-                        <SelectTrigger>
-                          <SelectValue />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="low">عادي</SelectItem>
-                          <SelectItem value="normal">متوسط</SelectItem>
-                          <SelectItem value="high">عاجل</SelectItem>
-                          <SelectItem value="emergency">طوارئ</SelectItem>
-                        </SelectContent>
-                      </Select>
+                      <UrgencySelectWrapper />
                     </div>
                   </div>
                 </CardContent>
